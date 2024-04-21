@@ -1,0 +1,155 @@
+/* ///general styles///// */
+:root
+{
+     --main-color:#f44336;
+     --second-color:#f2f2f2;
+}
+a
+{
+     text-decoration: none;
+}
+li
+{
+     list-style: none;
+}
+.icon 
+{
+     width: 3rem;
+     height: 3rem;
+     border-radius: 50%;
+     border: 3px solid rgba(255, 255, 255,0.1);
+     transition: all 0.5s;
+     background-color: black;
+     color: white;
+}
+
+/* ///// start of navbar////// */
+.navbar-dark .navbar-nav .nav-link{
+     color: #eee;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+
+     color: var(--main-color);
+
+}
+.navbar-dark .navbar-nav .nav-item .active 
+{
+     color: var(--main-color);
+} 
+nav .navbar-dark .navbar-nav .nav-link.active::after
+{
+     content: "";
+     width: 40px;
+     height: 2px;
+     background-color: var(--main-color);
+     bottom: 0;
+     position: absolute;
+
+}
+
+/* ////end of navbar////// */
+
+/* start of hero section  */
+#header
+{
+     background-image: url('../images/bg.jpg');
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+}
+#header a
+{
+     color: var(--main-color);
+}
+ .icon:hover
+{
+     border: 3px solid rgba(255, 255, 255,1);
+     
+}
+.icon:hover i
+{
+     color: var(--main-color);
+}
+
+/* end of hero section  */
+
+/* /////start of about section //// */
+
+.about_caption h2
+{
+     font-size: 3rem;
+     letter-spacing: 15px;
+     color: var(--second-color);
+    }
+.about_caption h3::after
+{
+     background-color: var(--main-color);
+     content: "";
+     position: absolute;
+     bottom: -15%;
+     width: 80px;
+     height: 5px;
+     transform: translateX(-50%);
+     left: 50%;
+}
+#Creative 
+{
+     color: var(--main-color);
+     font-size: 1.5rem;
+}
+/* /////end of about section //// */
+
+
+/* /////start of services section //// */
+.test h2::after
+{
+     content: "";
+     position: absolute;
+     background-color: var(--main-color);
+     width: 40px;
+     height: 5px;
+     bottom: -10%;
+     left: 50%;
+     transform: translateX(-50%);
+     transition: all 0.5s;
+}
+.test:hover h2::after
+{
+     width: 100px;
+
+}
+
+/* /////end of services section //// */
+
+/* //////navs&tabs//////// */
+#navstabs .nav-tabs
+{
+     border: none;
+     
+
+}
+#navstabs .nav-tabs .nav-item .active
+{
+
+}
+#navstabs .nav-tabs .nav-item button
+{
+     border: none;
+     text-decoration: none;
+     color: black;
+}
+/* //////navs&tabs//////// */
+
+/* ////start of carousel//////// */
+.inner_item
+{
+     border: 3px solid black;
+}
+#carousel .carousel-indicators button
+{
+     width: 3rem;
+     height: 3rem;
+     border-radius: 50%;
+     text-indent: 0;
+}
+/* ////end of carousel//////// */
